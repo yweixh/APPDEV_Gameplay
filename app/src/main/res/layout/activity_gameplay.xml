@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GamePlay"
+    android:background="@drawable/background">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:src="@drawable/top_part"
+        android:alpha="0.5"/>
+
+    <TextView
+        android:id="@+id/QuestionTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question"
+        android:textColor="#F6F4EB"
+        android:textSize="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="35dp"
+        android:fontFamily="@font/interphases_pro_trial_med"/>
+
+    <TextView
+        android:id="@+id/QuestionNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/QuestionTxt"
+        android:text="0"
+        android:textSize="50dp"
+        android:textColor="#F6F4EB"
+        android:layout_marginLeft="57dp"/>
+
+    <TextView
+        android:id="@+id/TimeTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time"
+        android:textColor="#F6F4EB"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:fontFamily="@font/interphases_pro_trial_med" />
+
+    <TextView
+        android:id="@+id/TimeNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TimeTxt"
+        android:text="0"
+        android:textSize="50dp"
+        android:textColor="#f6f4eb"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/ScoreTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score"
+        android:textSize="20dp"
+        android:textColor="#f6f4eb"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="298dp"
+        android:fontFamily="@font/interphases_pro_trial_med" />
+
+    <TextView
+        android:id="@+id/ScoreNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="50dp"
+        android:textColor="#f6f4eb"
+        android:layout_below="@id/ScoreTxt"
+        android:layout_marginLeft="310dp" />
+
+    <TextView
+        android:id="@+id/WordToGuess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Word to Guess"
+        android:textColor="#f6f4eb"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_below="@+id/WordToGuess">
+
+        <Button
+            android:id="@+id/FirstChoice"
+            android:text="A"
+            android:layout_width="285dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/WordToGuess"
+            android:layout_marginTop="135dp"
+            android:background="@drawable/button_color"/>
+
+        <Button
+            android:id="@+id/SecondChoice"
+            android:text="B"
+            android:layout_width="285dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:background="@drawable/button_color"/>
+
+        <Button
+            android:id="@+id/ThirdChoice"
+            android:text="C"
+            android:layout_width="285dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:background="@drawable/button_color"/>
+
+        <Button
+            android:id="@+id/FourthChoice"
+            android:text="D"
+            android:layout_width="285dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:background="@drawable/button_color"/>
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>
